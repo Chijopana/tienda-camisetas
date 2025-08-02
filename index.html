@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,19 @@
   <meta name="author" content="Camisetas Creativas">
   <title>Camisetas Creativas - Inicio</title>
   <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="plugins/galeria/lightbox.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="plugins/galeria/css/lightbox.min.css">
 </head>
+
 <body>
-  <header>
+  <header class="hero">
+    <div class="overlay"></div>
     <div class="container header-container">
       <h1>Camisetas Creativas</h1>
+      <p class="subtitulo">Tu idea, nuestra impresión</p>
       <nav aria-label="Navegación principal">
         <ul class="menu">
           <li><a href="index.html" aria-current="page">Inicio</a></li>
@@ -25,18 +33,20 @@
   </header>
 
   <main class="container">
-    <section class="descripcion">
+    <section class="descripcion fade-in">
       <h2>Bienvenidos a Camisetas Creativas</h2>
-      <p>Somos especialistas en la impresión de camisetas personalizadas para eventos, negocios y particulares. Ofrecemos materiales de calidad y un servicio rápido y profesional.</p>
+      <p>Especialistas en impresión de camisetas personalizadas para eventos, empresas y particulares. Usamos técnicas modernas, materiales sostenibles y un diseño que refleja tu identidad.</p>
+      <a href="trabajos.html" class="boton-llamada">Ver nuestros trabajos</a>
     </section>
 
-    <section class="galeria">
-      <h2>Galería de Imágenes</h2>
+    <section class="galeria fade-in">
+      <h2>Galería de Diseños</h2>
+      <p class="galeria-intro">Explora algunos de nuestros diseños destacados realizados para nuestros clientes.</p>
       <div class="galeria-grid">
-        <a href="img/galeria1.jpg" data-lightbox="galeria" data-title="Diseño 1"><img src="img/galeria1.jpg" alt="Camiseta diseño 1"></a>
-        <a href="img/galeria2.jpg" data-lightbox="galeria" data-title="Diseño 2"><img src="img/galeria2.jpg" alt="Camiseta diseño 2"></a>
-        <a href="img/galeria3.jpg" data-lightbox="galeria" data-title="Diseño 3"><img src="img/galeria3.jpg" alt="Camiseta diseño 3"></a>
-        <a href="img/galeria4.jpg" data-lightbox="galeria" data-title="Diseño 4"><img src="img/galeria4.jpg" alt="Camiseta diseño 4"></a>
+        <a href="img/galeria1.jpg" data-lightbox="galeria" data-title="Diseño moderno para evento cultural"><img src="img/galeria1.jpg" alt="Camiseta diseño 1"></a>
+        <a href="img/galeria2.jpg" data-lightbox="galeria" data-title="Diseño urbano para marca juvenil"><img src="img/galeria2.jpg" alt="Camiseta diseño 2"></a>
+        <a href="img/galeria3.jpg" data-lightbox="galeria" data-title="Diseño ecológico para grupo ambiental"><img src="img/galeria3.jpg" alt="Camiseta diseño 3"></a>
+        <a href="img/galeria4.jpg" data-lightbox="galeria" data-title="Diseño personalizado para empresa local"><img src="img/galeria4.jpg" alt="Camiseta diseño 4"></a>
       </div>
     </section>
   </main>
@@ -47,7 +57,8 @@
     </div>
   </footer>
 
-  <script src="plugins/galeria/lightbox.min.js"></script>
+  <script src="plugins/galeria/js/lightbox.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
+
 </html>

@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conoce la historia y el equipo de Camisetas Creativas.">
+  <meta name="description" content="Conoce la historia, misión y equipo de Camisetas Creativas.">
   <meta name="author" content="Camisetas Creativas">
   <title>Camisetas Creativas - Sobre Nosotros</title>
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="hero" style="background-image: url('img/hero-sobre-nosotros.jpg');">
+    <div class="overlay"></div>
     <div class="container header-container">
-      <h1>Camisetas Creativas</h1>
+      <h1>Sobre Nosotros</h1>
+      <p class="subtitulo">Pasión por crear, compromiso con la calidad</p>
       <nav aria-label="Navegación principal">
         <ul class="menu">
           <li><a href="index.html">Inicio</a></li>
@@ -24,13 +29,47 @@
   </header>
 
   <main class="container">
-    <section class="historia">
+    <section class="historia fade-in">
       <h2>Nuestra Historia</h2>
       <div class="historia-contenido">
         <img src="img/instalaciones.jpg" alt="Instalaciones de Camisetas Creativas">
         <div class="texto-historia">
           <p>Desde nuestra fundación en 2012, Camisetas Creativas ha trabajado con pasión para ofrecer productos personalizados de alta calidad. Empezamos como un pequeño taller con solo una máquina y muchas ideas. Gracias al compromiso con nuestros clientes y nuestra creatividad, hoy contamos con un equipo profesional y tecnología avanzada.</p>
           <p>Hemos colaborado con escuelas, eventos deportivos, empresas locales y artistas independientes. Nuestra filosofía se basa en el diseño único, materiales sostenibles y un trato cercano y humano.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mision fade-in">
+      <h2>Nuestra Misión</h2>
+      <p>Nuestra misión es transformar ideas en prendas que expresen identidad, emoción y propósito. A través de procesos éticos, materiales sostenibles y atención personalizada, buscamos convertir cada camiseta en una pieza única con alma propia.</p>
+    </section>
+
+    <section class="valores fade-in">
+      <h2>Valores que nos definen</h2>
+      <ul>
+        <li><strong>Creatividad:</strong> Diseños únicos adaptados a cada cliente.</li>
+        <li><strong>Sostenibilidad:</strong> Uso de tintas ecológicas y materiales responsables.</li>
+        <li><strong>Compromiso:</strong> Cumplimos con calidad y a tiempo.</li>
+        <li><strong>Cercanía:</strong> Trato humano y atención personalizada.</li>
+      </ul>
+    </section>
+
+    <section class="equipo fade-in">
+      <h2>Conoce al equipo</h2>
+      <p>Somos un grupo de diseñadores, impresores y soñadores que trabajamos juntos para dar vida a tus ideas. Nuestra experiencia, creatividad y pasión hacen posible cada proyecto.</p>
+      <div class="equipo-grid">
+        <div class="miembro">
+          <img src="img/equipo1.jpg" alt="María, directora creativa">
+          <p><strong>María</strong><br>Directora creativa</p>
+        </div>
+        <div class="miembro">
+          <img src="img/equipo2.jpg" alt="Luis, jefe de producción">
+          <p><strong>Luis</strong><br>Jefe de producción</p>
+        </div>
+        <div class="miembro">
+          <img src="img/equipo3.jpg" alt="Ana, atención al cliente">
+          <p><strong>Ana</strong><br>Atención al cliente</p>
         </div>
       </div>
     </section>

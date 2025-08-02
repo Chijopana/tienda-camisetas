@@ -7,11 +7,16 @@
   <meta name="author" content="Camisetas Creativas">
   <title>Camisetas Creativas - Contacto</title>
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="hero" style="background-image: url('img/hero-contacto.jpg');">
+    <div class="overlay"></div>
     <div class="container header-container">
-      <h1>Camisetas Creativas</h1>
+      <h1>Contacto</h1>
+      <p class="subtitulo">Estamos aquí para ayudarte</p>
       <nav aria-label="Navegación principal">
         <ul class="menu">
           <li><a href="index.html">Inicio</a></li>
@@ -24,8 +29,9 @@
   </header>
 
   <main class="container">
-    <section class="contacto">
+    <section class="contacto fade-in">
       <h2>Formulario de Contacto</h2>
+      <p class="galeria-intro">¿Tienes un diseño en mente? ¿Quieres un presupuesto? Escríbenos y te responderemos lo antes posible.</p>
       <form action="#" method="post" novalidate aria-label="Formulario de contacto">
         <div class="form-group">
           <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
@@ -49,6 +55,15 @@
 
         <button type="submit">Enviar Mensaje</button>
       </form>
+
+      <div class="info-contacto">
+        <h3>También puedes contactarnos:</h3>
+        <ul>
+          <li><strong>Email:</strong> contacto@camisetascreativas.com</li>
+          <li><strong>Teléfono:</strong> +34 912 345 678</li>
+          <li><strong>Dirección:</strong> Calle Creativa 123, Barcelona</li>
+        </ul>
+      </div>
     </section>
   </main>
 
