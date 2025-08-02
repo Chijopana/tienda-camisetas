@@ -1,0 +1,183 @@
+/* === Reset básico y tipografía === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em 0;
+}
+
+/* === Cabecera y navegación === */
+header {
+  background-color: #20232a;
+  color: #fff;
+  padding: 1.5em 0;
+}
+
+.header-container h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+nav ul.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+nav a[aria-current="page"] {
+  border-bottom: 2px solid #61dafb;
+}
+
+/* === Secciones generales === */
+main h2 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.descripcion p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* === Galería === */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.galeria-grid a:hover img {
+  transform: scale(1.05);
+}
+
+/* === Historia === */
+.historia-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.historia-contenido img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.texto-historia {
+  font-size: 1.1em;
+}
+
+@media (min-width: 768px) {
+  .historia-contenido {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .texto-historia {
+    padding-left: 2em;
+  }
+}
+
+/* === Trabajos === */
+.trabajos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.trabajo img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.trabajo h3 {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+}
+
+/* === Formulario de contacto === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+input, textarea {
+  padding: 0.7em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #20232a;
+  color: #fff;
+  border: none;
+  padding: 0.8em;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #444950;
+}
+
+/* === Pie de página === */
+footer {
+  background-color: #20232a;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 3em;
+}
